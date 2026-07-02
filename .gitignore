@@ -1,6 +1,8 @@
-bin/create_token.sh
-bin/diagnose_grafana.py
-bin/push_grafana.sh
-bin/push_metrics_grafana.sh
-bin/push_metrics_grafana.sh.bak
-bin/install_gemini_copilot.sh
+# === BERKAS RAHASIA — DILARANG MASUK KE GUDANG AWAN ===
+bin/*token*.sh
+bin/*grafana*.sh
+bin/*grafana*.py
+bin/install_gemini*.sh
+*.env
+*.key
+*.secret
