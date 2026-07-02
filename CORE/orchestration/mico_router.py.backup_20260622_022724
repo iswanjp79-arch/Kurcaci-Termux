@@ -1,0 +1,60 @@
+import json
+import subprocess
+import sys
+import os
+from intent_classifier import classify_intent
+
+JDEQ = os.path.expanduser("~/JDEQ")
+REGISTRY_FILE = os.path.join(JDEQ, "CORE_ORCHESTRATION", "agent_registry.json")
+EXECUTOR_DIR = os.path.join(JDEQ, "CORE_ORCHESTRATION", "executors")
+
+def load_registry():
+    try:
+        with open(REGISTRY_FILE, 'r') as f:
+            return json.load(f)
+    except:
+        return {"agents": {"local": {"executor": "local_qwen.sh"}}}
+
+def route_task(user_input):
+    agent_name = classify_intent(user_input)
+    registry = load_registry()
+    agents = registry.get("agents", {})
+    agent = agents.get(agent_name, agents.get("local", {}))
+    executor = agent.get("executor", "local_qwen.sh")
+
+    # Jika executor adalah file di executors/
+    if executor.startswith("executors/"):
+        executor_path = os.path.join(EXECUTOR_DIR, os.path.basename(executor))
+        if os.path.exists(executor_path) and os.access(executor_path, os.X_OK):
+            try:
+                result = subprocess.run([executor_path, user_input], capture_output=True, text=True, timeout=45)
+                output = result.stdout.strip()
+                return output if output else "Tidak ada output dari executor"
+            except subprocess.TimeoutExpired:
+                return "Permintaan timeout (lebih dari 45 detik). Server mungkin sibuk."
+            except Exception as e:
+                return f"Error: {str(e)}"
+        else:
+            return f"Executor {executor} tidak ditemukan atau tidak executable"
+
+    # Fallback ke Qwen lokal (menggunakan requests)
+    try:
+        import requests
+        payload = {"prompt": user_input, "n_predict": 100}
+        response = requests.post("http://127.0.0.1:8082/completion", json=payload, timeout=60)
+        if response.status_code == 200:
+            data = response.json()
+            return data.get("content", "Tidak ada konten")
+        else:
+            return f"Server error: {response.status_code}"
+    except requests.exceptions.Timeout:
+        return "Timeout server lokal (60 detik)"
+    except Exception as e:
+        return f"Error: {str(e)}"
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("Gunakan: mico_router.py 'perintah Anda'")
+        sys.exit(1)
+    user_input = " ".join(sys.argv[1:])
+    print(route_task(user_input))

@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-06-22T05:24:22+07:00",
+  "system": "JDEQ_V3.0",
+  "dependencies": {
+    "ok": 5,
+    "fail": 0,
+    "list": {
+  "jq": true,
+  "mosquitto_pub": true,
+  "mosquitto_sub": true,
+  "termux-battery-status": true,
+  "ffmpeg": true
+}
+  },
+  "mqtt": {
+    "broker": "ONLINE",
+    "publish_test": true
+  },
+  "battery": {
+  "present": true,
+  "technology": "Li-ion",
+  "health": "GOOD",
+  "plugged": "UNPLUGGED",
+  "status": "DISCHARGING",
+  "temperature": 37.8,
+  "voltage": 3815,
+  "current": -529400,
+  "current_average": -604600,
+  "percentage": 52,
+  "level": 52,
+  "scale": 100,
+  "charge_counter": 2673000,
+  "cycle": 756
+},
+  "executor": "DeepSeek Executor V3.1",
+  "adapter": "JARVIS_TO_DEEPSEEK_EXEC_V3.1"
+}

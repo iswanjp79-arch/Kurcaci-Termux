@@ -1,0 +1,15 @@
+#!/bin/bash
+TOKEN="8052456691:AAFCrMczti2SQzcdLj3DJTlJNn-BA_m6GJ8"
+CHAT_ID="8702459215"
+PESAN="$1"
+BERKAS_CATATAN=~/JDEQ/AUDIT/kiriman_terakhir.txt
+mkdir -p ~/JDEQ/AUDIT
+TERAKHIR=$(cat "$BERKAS_CATATAN" 2>/dev/null || echo "TIDAK ADA")
+if [ "$PESAN" != "$TERAKHIR" ]; then
+  curl -s -X POST "https://api.telegram.org/bot$TOKEN/sendMessage" \
+    -d "chat_id=$CHAT_ID" -d "text=$PESAN" > /dev/null 2>&1
+  echo "$PESAN" > "$BERKAS_CATATAN"
+  echo "✅ Terkirim: $PESAN"
+else
+  echo "🔴 Diabaikan (sama persis): $PESAN"
+fi

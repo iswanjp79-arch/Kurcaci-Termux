@@ -1,0 +1,12 @@
+{
+  "priority": {
+    "validator": 1,
+    "audit": 2,
+    "network": 3,
+    "cpm": 4,
+    "report": 5,
+    "workflow": 6,
+    "pep": 7
+  },
+  "rule": "Semakin kecil angka, semakin tinggi prioritas"
+}

@@ -1,0 +1,10 @@
+{
+  "summary": "Pembangunan jembatan",
+  "status": "aktif",
+  "risks": [
+    "banjir",
+    "material telat"
+  ],
+  "project_id": "PROJECT-01",
+  "last_updated": 1782134828.3411627
+}

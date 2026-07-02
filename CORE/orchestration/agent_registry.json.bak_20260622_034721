@@ -1,0 +1,44 @@
+{
+  "agents": {
+    "deepseek": {
+      "fungsi": ["coding", "debugging", "optimasi"],
+      "executor": "executors/deepseek_executor.sh",
+      "endpoint": "internal"
+    },
+    "chatgpt": {
+      "fungsi": ["analisa", "strategi", "arsitektur", "RAB", "WBS"],
+      "executor": "executors/chatgpt_executor.sh",
+      "endpoint": "internal"
+    },
+    "perplexity": {
+      "fungsi": ["riset", "perencanaan", "amoeba", "splitting", "failover", "replikasi", "thermal", "ram"],
+      "executor": "executors/perplexity_executor.sh",
+      "endpoint": "external"
+    },
+    "gemini": {
+      "fungsi": ["gambar", "visual", "desain"],
+      "executor": "executors/gemini_executor.sh",
+      "endpoint": "internal"
+    },
+    "nix": {
+      "fungsi": ["eksekusi", "build", "compile", "nix", "shell"],
+      "executor": "executors/nix_executor.sh",
+      "endpoint": "bridge"
+    },
+    "local": {
+      "fungsi": ["default", "umum", "obrolan"],
+      "executor": "local_qwen.sh",
+      "endpoint": "http://127.0.0.1:8082/completion"
+    }
+  },
+  "routing_rules": {
+    "default": "local",
+    "contains": {
+      "kode|code|coding|debug": "deepseek",
+      "analisa|strategi|arsitektur|RAB|WBS": "chatgpt",
+      "riset|amoeba|splitting|failover|replikasi|thermal|ram": "perplexity",
+      "gambar|visual|desain": "gemini",
+      "eksekusi|build|compile|nix": "nix"
+    }
+  }
+}

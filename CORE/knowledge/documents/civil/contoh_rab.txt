@@ -1,0 +1,14 @@
+RENCANA ANGGARAN BIAYA (RAB)
+Proyek: Pembangunan Gedung Kantor
+Lokasi: Area 1
+
+ITEM PEKERJAAN:
+1. Galian Tanah: 120 m3 x Rp85.000 = Rp10.200.000
+2. Timbunan: 45 m3 x Rp65.000 = Rp2.925.000
+3. Beton K-225: 28.5 m3 x Rp1.200.000 = Rp34.200.000
+4. Pasangan Bata: 200 m2 x Rp95.000 = Rp19.000.000
+5. Cor Lantai: 12 m3 x Rp1.100.000 = Rp13.200.000
+
+TOTAL: Rp79.525.000
+
+Kategori: CIVIL, RAB, BOQ

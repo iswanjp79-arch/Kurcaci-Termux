@@ -1,0 +1,3 @@
+{"timestamp": "2026-07-01T01:08:35.490262", "actor": "CommandCenter", "module": "AuditLogger", "decision": "INIT", "result": "SUCCESS", "detail": "Audit Logger berjalan"}
+{"timestamp": "2026-07-01T16:17:27.419369", "actor": "ApplicationBootstrap", "module": "APPLICATION", "decision": "BOOTSTRAP", "result": "SUCCESS", "detail": "Application Layer dibuat"}
+{"timestamp": "2026-07-02T12:39:47.531124", "actor": "DeepSeek", "module": "n8n", "decision": "N8N_SETUP", "result": "SUCCESS", "detail": "n8n installed & workflows defined"}

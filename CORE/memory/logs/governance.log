@@ -1,0 +1,4 @@
+[2026-06-21 03:01:32] GOVERNANCE [COMPLIANCE_CHECK] [{'ssot_exists': True, 'audit_log_exists': True, 'backup_exists': True}]
+[2026-06-21 03:23:54] GOVERNANCE [COMPLIANCE_CHECK] [{'ssot_exists': True, 'audit_log_exists': True, 'backup_exists': True}]
+[2026-06-22 17:23:18] GOVERNANCE [COMPLIANCE_CHECK] [{'ssot_exists': True, 'audit_log_exists': True, 'backup_exists': True}]
+[2026-06-22 17:27:01] GOVERNANCE [COMPLIANCE_CHECK] [{'ssot_exists': True, 'audit_log_exists': True, 'backup_exists': True}]

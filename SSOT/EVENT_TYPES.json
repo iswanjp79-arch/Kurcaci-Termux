@@ -1,0 +1,6 @@
+{
+  "SYSTEM_WARNING_RAM": {"priority": "HIGH", "owner": "Runtime Watcher"},
+  "KERNEL_BLUEPRINT_VIOLATION": {"priority": "CRITICAL", "owner": "Sovereign Kernel"},
+  "MQTT_CONNECTED": {"priority": "NORMAL", "owner": "MQTT Bridge"},
+  "TASK_COMPLETED": {"priority": "LOW", "owner": "Task Scheduler"}
+}

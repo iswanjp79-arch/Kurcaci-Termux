@@ -1,0 +1,13 @@
+{
+  "decision_id": "WIS-002",
+  "project_id": "WISDOM-01",
+  "decision": "Jangan gunakan supplier A",
+  "rationale": "",
+  "timestamp": 1782135853.519767,
+  "outcome": "failure",
+  "source": "qwen",
+  "_audit": {
+    "status": "valid",
+    "audited_at": 1782135853.56197
+  }
+}

@@ -1,0 +1,24 @@
+#!/bin/bash
+NODE_ID="$1"; shift; COMMAND="$*"
+[ -z "$NODE_ID" ] || [ -z "$COMMAND" ] && { echo "Usage: dispatcher.sh <node_id> <command>"; exit 1; }
+NODES_FILE="$HOME/JDEQ/NODE_REGISTRY/nodes.json"
+command -v jq >/dev/null || { echo "ERROR: jq missing"; exit 1; }
+[ -f "$NODES_FILE" ] || { echo "ERROR: nodes.json not found"; exit 1; }
+NODE=$(jq -r ".nodes[] | select(.id==\"$NODE_ID\")" "$NODES_FILE")
+[ -z "$NODE" ] && { echo "ERROR: Node $NODE_ID not found"; exit 1; }
+TYPE=$(echo "$NODE" | jq -r '.type'); IP=$(echo "$NODE" | jq -r '.ip'); PORT=$(echo "$NODE" | jq -r '.port'); STATUS=$(echo "$NODE" | jq -r '.status')
+[ "$STATUS" != "active" ] && { echo "ERROR: Node $NODE_ID status=$STATUS"; exit 1; }
+mkdir -p "$HOME/JDEQ/AUDIT/actions"
+echo "$(date '+%Y-%m-%d %H:%M:%S') | DISPATCH | $NODE_ID | $COMMAND" >> "$HOME/JDEQ/AUDIT/actions/dispatcher_$(date +%Y%m%d).log"
+case "$TYPE" in
+  # Cek status node sebelum kirim
+  termux|linux)
+    if [ "$IP" == "127.0.0.1" ]; then eval "$COMMAND"; else ssh -o StrictHostKeyChecking=no -o ConnectTimeout=5 -p "$PORT" "$IP" "$COMMAND"; fi ;;
+  nix)
+    echo "$COMMAND" > /sdcard/NixBridge/task.txt
+    TIMEOUT=10
+    while [ ! -f /sdcard/NixBridge/result.txt ] && [ $TIMEOUT -gt 0 ]; do sleep 1; TIMEOUT=$((TIMEOUT-1)); done
+    if [ -f /sdcard/NixBridge/result.txt ]; then cat /sdcard/NixBridge/result.txt; rm -f /sdcard/NixBridge/result.txt; else echo "WARN: No Nix response in 10s"; fi
+    ;;
+  *) echo "ERROR: Unknown node type"; exit 1 ;;
+esac

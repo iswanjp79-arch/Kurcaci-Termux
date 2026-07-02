@@ -1,0 +1,35 @@
+#!/bin/bash
+TASK_FILE=~/storage/shared/NixBridge/task.txt
+RESULT_FILE=~/storage/shared/NixBridge/result.txt
+LOCK_FILE=~/storage/shared/NixBridge/listener.lock
+
+# 1. Kirim perintah
+echo "$*" > "$TASK_FILE"
+
+# 2. Tunggu hasil dengan deteksi listener mati
+HASIL=""
+for i in $(seq 1 20); do
+  sleep 2
+  if [ -f "$RESULT_FILE" ]; then
+    HASIL=$(cat "$RESULT_FILE")
+    rm "$RESULT_FILE" 2>/dev/null
+    break
+  fi
+  # Deteksi: jika lebih dari 10 detik tidak ada jawaban, restart listener
+  if [ $i -eq 5 ] && [ ! -f "$RESULT_FILE" ]; then
+    echo "[BRIDGE] Listener Nix tidak merespons. Mencoba restart..."
+    echo "nohup bash ~/nix_listener_tahan_kill.sh > /dev/null 2>&1 &" > "$TASK_FILE"
+    sleep 3
+    # Kirim ulang perintah asli
+    echo "$*" > "$TASK_FILE"
+  fi
+done
+
+# 3. Tampilkan hasil
+if [ -n "$HASIL" ]; then
+  echo "$HASIL"
+else
+  echo "[BRIDGE] GAGAL: Nix-on-Droid tidak merespons."
+  echo "Pastikan listener berjalan di Nix-on-Droid:"
+  echo "  nohup bash ~/nix_listener_tahan_kill.sh &"
+fi

@@ -1,0 +1,14 @@
+{
+  "/audit": {"agent": "claude", "wrapper": "Audit secara menyeluruh, temukan inkonsistensi.", "token_save": false},
+  "/execute": {"agent": "deepseek", "wrapper": "Buat kode utuh siap copy-paste. Satu file.", "token_save": false},
+  "/debug": {"agent": "copilot_github", "wrapper": "Temukan dan jelaskan bug. Berikan fix lengkap.", "token_save": false},
+  "/refactor": {"agent": "deepseek", "wrapper": "Rapikan tanpa ubah fungsi. Satu file utuh.", "token_save": false},
+  "/blueprint": {"agent": "gemini", "wrapper": "Buat blueprint implementasi nyata.", "token_save": false},
+  "/roadmap": {"agent": "gemini", "wrapper": "Buat roadmap berbasis waktu yang realistis.", "token_save": false},
+  "/security": {"agent": "claude", "wrapper": "Periksa aspek keamanan. Prioritaskan risiko tertinggi.", "token_save": false},
+  "/checklist": {"agent": "copilot_microsoft", "wrapper": "Buat checklist actionable.", "token_save": true},
+  "/minimal": {"agent": "any", "wrapper": "Jawab maks 2 kalimat.", "token_save": true},
+  "/ghost": {"agent": "any", "wrapper": "Jawaban saja, tanpa penjelasan.", "token_save": true},
+  "/consolidate": {"agent": "claude", "wrapper": "Identifikasi duplikasi dan buat rencana konsolidasi.", "token_save": true},
+  "/verify": {"agent": "dola", "wrapper": "Cek konsistensi dengan SSOT. Laporkan deviasi.", "token_save": false}
+}

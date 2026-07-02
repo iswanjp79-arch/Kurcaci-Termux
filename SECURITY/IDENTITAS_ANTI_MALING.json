@@ -1,0 +1,11 @@
+{
+  "nama": "MICO-JDEQ V7",
+  "pemilik": "Iswan Juman Pancoro, ST",
+  "uuid": "da826830-2382-4271-8918-936e83b8d930",
+  "perangkat_dipercaya": ["100.123.232.84", "100.103.39.81"],
+  "aturan": {
+    "max_offline_menit": 10,
+    "auto_kunci": true,
+    "notifikasi_telegram": true
+  }
+}

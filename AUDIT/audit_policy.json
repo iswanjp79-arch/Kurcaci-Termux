@@ -1,0 +1,5 @@
+{
+  "policy": "Semua perubahan arsitektur dan keputusan harus tercatat di audit log",
+  "retention": "forever",
+  "alert_on": ["error", "timeout", "rejected"]
+}

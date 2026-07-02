@@ -1,0 +1,17 @@
+{
+  "dna": {
+    "tujuan": "Membangun MICO sebagai Entitas Operasional Digital mandiri",
+    "fase": [
+      {"id": 11, "nama": "Protokol Kendali", "target": "Event system, Agent registry, Task queue, Status manager, Error recovery, Audit trigger"},
+      {"id": 12, "nama": "Orchestrator", "target": "Pembaca PEP, pengarah workflow, pemanggil modul, pencatat hasil"},
+      {"id": 13, "nama": "MICO Integration", "target": "Sensor → Memory → Orchestrator → Response"}
+    ],
+    "batasan": [
+      "Jangan menambah banyak agen baru",
+      "Jangan mengejar model AI besar",
+      "Jangan mengubah struktur folder tanpa audit",
+      "Jangan membuat fitur sebelum jalur kontrol hidup"
+    ],
+    "prioritas": "Stabilitas → Integrasi → Kendali → Kecerdasan"
+  }
+}

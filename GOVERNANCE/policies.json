@@ -1,0 +1,10 @@
+{
+  "policies": [
+    {"id":"POL-001","name":"No root access","enforced":true},
+    {"id":"POL-002","name":"Offline-first","enforced":true},
+    {"id":"POL-003","name":"All changes reversible","enforced":true},
+    {"id":"POL-004","name":"Audit all actions","enforced":true},
+    {"id":"POL-005","name":"Approval required for major changes","enforced":true}
+  ],
+  "permissions": {"owner":["Mas Iswan"],"agents":["MICO","DeepSeek","ChatGPT","Claude","Gemini","Perplexity"],"executors":["Termux","Nix","Qwen"]}
+}

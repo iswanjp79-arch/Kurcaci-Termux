@@ -1,0 +1,49 @@
+{
+  "dewan_agen": {
+    "claude": {
+      "peran": "Chief Architect & Auditor",
+      "status": "AKTIF",
+      "tugas": "Rekonstruksi arsitektur, audit konsistensi"
+    },
+    "gemini": {
+      "peran": "Quantum Router Engineer",
+      "status": "STANDBY",
+      "tugas": "Router & dispatcher (setelah Cortex stabil)"
+    },
+    "chatgpt": {
+      "peran": "General Logic & Structuring",
+      "status": "AKTIF",
+      "tugas": "Parsing, konversi format, strategi"
+    },
+    "copilot_microsoft": {
+      "peran": "Governance Engineer",
+      "status": "AKTIF",
+      "tugas": "Dokumentasi, Planner, Dashboard"
+    },
+    "dola": {
+      "peran": "SSOT Guardian",
+      "status": "AKTIF",
+      "tugas": "Penjaga Acuan Tunggal"
+    },
+    "deepseek": {
+      "peran": "Execution Engine",
+      "status": "AKTIF",
+      "tugas": "Kode, bash script, implementasi"
+    },
+    "perplexity": {
+      "peran": "Discovery Node",
+      "status": "STANDBY",
+      "tugas": "Riset API, library terbaru"
+    },
+    "copilot_github": {
+      "peran": "Code Intelligence",
+      "status": "STANDBY",
+      "tugas": "Auto-complete, debugging"
+    },
+    "emergent": {
+      "peran": "Evolution Engine",
+      "status": "AKTIF",
+      "tugas": "Pola tak terduga, iterasi algoritma, deteksi anomali"
+    }
+  }
+}

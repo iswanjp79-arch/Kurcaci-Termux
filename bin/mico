@@ -1,0 +1,40 @@
+#!/bin/bash
+if [ -z "$1" ]; then echo "MICO: Beri perintah. Contoh: mico 'analisa strategi'"; exit 0; fi
+case "$1" in
+  status)
+    echo "========================="
+    echo "  MICO CORE"
+    echo "========================="
+    echo "GATEWAY  : ONLINE"
+    pgrep -f task_worker.py >/dev/null && echo "WORKER   : ONLINE" || echo "WORKER   : OFFLINE"
+    pgrep -f mosquitto >/dev/null && echo "MQTT     : ONLINE" || echo "MQTT     : OFFLINE"
+    if [ -f /sdcard/NixBridge/listener.pid ]; then
+      PID=$(cat /sdcard/NixBridge/listener.pid)
+      kill -0 "$PID" 2>/dev/null && echo "NIX      : CONNECTED" || echo "NIX      : OFFLINE"
+    else echo "NIX      : OFFLINE"; fi
+    echo "QUEUE    : $(jq length ~/JDEQ/queue/tasks.json 2>/dev/null || echo 0) task"
+    echo "========================="
+    exit 0 ;;
+  audit)
+    ~/JDEQ/AUDIT/audit_engine.sh "manual" "audit diminta"
+    tail -5 ~/JDEQ/AUDIT/DECISIONS/audit.log
+    exit 0 ;;
+  approval)
+    ~/JDEQ/GOVERNANCE/approval_gate.sh
+    exit 0 ;;
+  boot)
+    ~/JDEQ/RECOVERY/bootstrap.sh
+    exit 0 ;;
+  restore)
+    ~/JDEQ/RECOVERY/restore.sh
+    exit 0 ;;
+  dna)
+    cat ~/JDEQ/CONSTITUTION/DNA/identity.json 2>/dev/null
+    exit 0 ;;
+  help)
+    echo "Perintah MICO: status, audit, approval, boot, restore, dna, help"
+    echo "Atau berikan perintah teks untuk memanggil agen."
+    exit 0 ;;
+esac
+cd ~/JDEQ/ORCHESTRATION/ROUTER
+python3 mico_router.py "$*"

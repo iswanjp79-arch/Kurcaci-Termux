@@ -1,0 +1,7 @@
+{
+  "agent_zero": {"type": "dispatcher", "model": "phi-3-q4"},
+  "agent_sync": {"type": "cloud_sync", "remote": "gdrive"},
+  "agent_qaoa": {"type": "quantum_orchestrator"},
+  "agent_monitor": {"type": "watchdog"},
+  "agent_fallback": {"type": "server_orchestrator"}
+}

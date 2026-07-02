@@ -1,0 +1,13 @@
+{
+  "monthly_limit_mb": 1500,
+  "restrictions": {
+    "no_streaming": true,
+    "no_large_upload": true,
+    "max_file_size_mb": 5,
+    "ai_query_max_daily": 50,
+    "sync_interval_minutes": 30,
+    "mqtt_only_json": true
+  },
+  "current_usage_mb": 0,
+  "last_reset": "2026-06-28"
+}

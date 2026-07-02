@@ -1,0 +1,11 @@
+# N8N Workflow (Draft)
+- **Boot Workflow:** kernel.boot → Telegram notification
+- **Audit Workflow:** Audit Logger → Google Sheets (cloud off)
+- **Backup Workflow:** scheduler → rclone sync (cloud off)
+- **Recovery Workflow:** restore snapshot → verify hash
+- **Notification Workflow:** Event Bus → Telegram
+- **Event Workflow:** Event Bus → n8n webhook
+- **Telegram Workflow:** Telegram bot ↔ JDEQ Command
+- **AI Routing Workflow:** AI request → Groq/OpenRouter
+- **Cloud Sync Workflow:** rclone sync (saat WiFi hidup)
+- **Maintenance Workflow:** cron → cleanup scripts

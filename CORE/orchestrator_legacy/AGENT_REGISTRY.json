@@ -1,0 +1,11 @@
+{
+  "agents": [
+    {"id": "validator", "status": "aktif", "fungsi": "Validasi data"},
+    {"id": "audit", "status": "aktif", "fungsi": "Audit trail"},
+    {"id": "network", "status": "aktif", "fungsi": "Network builder"},
+    {"id": "cpm", "status": "aktif", "fungsi": "CPM logic"},
+    {"id": "report", "status": "aktif", "fungsi": "Report engine"},
+    {"id": "workflow", "status": "aktif", "fungsi": "Workflow engine"},
+    {"id": "pep", "status": "aktif", "fungsi": "PEP engine"}
+  ]
+}

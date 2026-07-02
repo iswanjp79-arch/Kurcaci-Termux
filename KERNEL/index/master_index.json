@@ -1,0 +1,473 @@
+{
+  "SSOT": [
+    {
+      "name": "KEY_INVENTORY.md",
+      "path": "SSOT/KEY_INVENTORY.md",
+      "size": 98
+    },
+    {
+      "name": "MASTER_CONTEXT.md",
+      "path": "SSOT/MASTER_CONTEXT.md",
+      "size": 2397
+    },
+    {
+      "name": "MASTER_AUDIT_REPORT.md",
+      "path": "SSOT/MASTER_AUDIT_REPORT.md",
+      "size": 934
+    },
+    {
+      "name": ".report.lock",
+      "path": "SSOT/.report.lock",
+      "size": 100
+    },
+    {
+      "name": "test.txt",
+      "path": "SSOT/test.txt",
+      "size": 39
+    },
+    {
+      "name": "MICO-EQ-001-FINAL.md",
+      "path": "SSOT/MICO-EQ-001-FINAL.md",
+      "size": 77
+    },
+    {
+      "name": "laporan_final_v3.0.json",
+      "path": "SSOT/laporan_final_v3.0.json",
+      "size": 3215
+    },
+    {
+      "name": "OPERATING_ORDER.md",
+      "path": "SSOT/OPERATING_ORDER.md",
+      "size": 841
+    },
+    {
+      "name": "OPERATING_ORDER.md.sha256",
+      "path": "SSOT/OPERATING_ORDER.md.sha256",
+      "size": 128
+    },
+    {
+      "name": "MASTER_PLAN_FINAL.md",
+      "path": "SSOT/MASTER_PLAN_FINAL.md",
+      "size": 2419
+    },
+    {
+      "name": "MASTER_PLAN_FINAL.md.sha256",
+      "path": "SSOT/MASTER_PLAN_FINAL.md.sha256",
+      "size": 130
+    },
+    {
+      "name": "index_L3_aktual.txt",
+      "path": "SSOT/index_L3_aktual.txt",
+      "size": 6752
+    },
+    {
+      "name": ".mico_guardian",
+      "path": "SSOT/.mico_guardian",
+      "size": 38
+    },
+    {
+      "name": "laporan_event_driven_kernel.md",
+      "path": "SSOT/laporan_event_driven_kernel.md",
+      "size": 1580
+    },
+    {
+      "name": "SSOT.md",
+      "path": "SSOT/SSOT.md",
+      "size": 307
+    },
+    {
+      "name": "laporan_final_protokol_10_5_3_1_5.md",
+      "path": "SSOT/laporan_final_protokol_10_5_3_1_5.md",
+      "size": 2636
+    },
+    {
+      "name": "laporan_os_orchestrator_final.md",
+      "path": "SSOT/laporan_os_orchestrator_final.md",
+      "size": 1409
+    },
+    {
+      "name": "technical_debt.md",
+      "path": "SSOT/technical_debt.md",
+      "size": 776
+    },
+    {
+      "name": "MEMORI_DOLA.md",
+      "path": "SSOT/MEMORI_DOLA.md",
+      "size": 904
+    },
+    {
+      "name": "PROJECT-01.json",
+      "path": "SSOT/memory_store/contexts/PROJECT-01.json",
+      "size": 181
+    },
+    {
+      "name": "DEC-006.json",
+      "path": "SSOT/memory_store/decisions/DEC-006.json",
+      "size": 226
+    },
+    {
+      "name": "DEC-007.json",
+      "path": "SSOT/memory_store/decisions/DEC-007.json",
+      "size": 234
+    },
+    {
+      "name": "WIS-001.json",
+      "path": "SSOT/memory_store/decisions/WIS-001.json",
+      "size": 270
+    },
+    {
+      "name": "WIS-002.json",
+      "path": "SSOT/memory_store/decisions/WIS-002.json",
+      "size": 276
+    },
+    {
+      "name": "WIS-003.json",
+      "path": "SSOT/memory_store/decisions/WIS-003.json",
+      "size": 297
+    },
+    {
+      "name": "material.md",
+      "path": "SSOT/memory_store/knowledge/material.md",
+      "size": 58
+    },
+    {
+      "name": "event_log.jsonl",
+      "path": "SSOT/memory_store/logs/event_log.jsonl",
+      "size": 769
+    },
+    {
+      "name": "integrity.sha256",
+      "path": "SSOT/HASH_SEAL/integrity.sha256",
+      "size": 130
+    },
+    {
+      "name": "SSOT-MICO-IDENTITY-20260625-V1.0.json",
+      "path": "SSOT/CONSTITUTION/SSOT-MICO-IDENTITY-20260625-V1.0.json",
+      "size": 2913
+    },
+    {
+      "name": "constitution_v1.0.json",
+      "path": "SSOT/IDENTITAS/constitution_v1.0.json",
+      "size": 1694
+    },
+    {
+      "name": "constitution_v1.0.json.sha256",
+      "path": "SSOT/IDENTITAS/constitution_v1.0.json.sha256",
+      "size": 89
+    },
+    {
+      "name": "governance_v1.0.json",
+      "path": "SSOT/TATA_KELOLA/governance_v1.0.json",
+      "size": 1105
+    },
+    {
+      "name": "governance_v1.0.json.sha256",
+      "path": "SSOT/TATA_KELOLA/governance_v1.0.json.sha256",
+      "size": 142
+    }
+  ],
+  "GOVERNANCE": [
+    {
+      "name": "policies.json",
+      "path": "GOVERNANCE/policies.json",
+      "size": 512
+    },
+    {
+      "name": "approval_gate.sh",
+      "path": "GOVERNANCE/approval_gate.sh",
+      "size": 268
+    },
+    {
+      "name": ".mico_guardian",
+      "path": "GOVERNANCE/.mico_guardian",
+      "size": 44
+    },
+    {
+      "name": "dewan_agen_registry.json",
+      "path": "GOVERNANCE/dewan_agen_registry.json",
+      "size": 1295
+    },
+    {
+      "name": "slash_registry.json",
+      "path": "GOVERNANCE/slash_registry.json",
+      "size": 1353
+    },
+    {
+      "name": "trust_engine.json",
+      "path": "GOVERNANCE/trust_engine.json",
+      "size": 67
+    },
+    {
+      "name": "decision_log.jsonl",
+      "path": "GOVERNANCE/decision_log.jsonl",
+      "size": 398
+    },
+    {
+      "name": "assembly_protocol.md",
+      "path": "GOVERNANCE/assembly_protocol.md",
+      "size": 1181
+    },
+    {
+      "name": "5_questions_template.md",
+      "path": "GOVERNANCE/5_questions_template.md",
+      "size": 561
+    },
+    {
+      "name": "approval_gate.sh",
+      "path": "GOVERNANCE/approvals/approval_gate.sh",
+      "size": 376
+    }
+  ],
+  "CORTEX": [
+    {
+      "name": "executive_cortex.py",
+      "path": "CORTEX/executive_cortex.py",
+      "size": 1188
+    },
+    {
+      "name": "intent_engine.py",
+      "path": "CORTEX/intent_engine.py",
+      "size": 4529
+    },
+    {
+      "name": "message_bus.py",
+      "path": "CORTEX/message_bus.py",
+      "size": 2404
+    },
+    {
+      "name": "scheduler.py",
+      "path": "CORTEX/scheduler.py",
+      "size": 1820
+    },
+    {
+      "name": "emergent_engine.py",
+      "path": "CORTEX/emergent_engine.py",
+      "size": 1897
+    },
+    {
+      "name": "agent_bus_test.py",
+      "path": "CORTEX/agent_bus_test.py",
+      "size": 984
+    },
+    {
+      "name": "agent_deepseek.py",
+      "path": "CORTEX/agent_deepseek.py",
+      "size": 1403
+    },
+    {
+      "name": "agent_template.py",
+      "path": "CORTEX/agent_template.py",
+      "size": 1690
+    },
+    {
+      "name": "orchestrate_all_agents.py",
+      "path": "CORTEX/orchestrate_all_agents.py",
+      "size": 2966
+    },
+    {
+      "name": "assembly_point.py",
+      "path": "CORTEX/assembly_point.py",
+      "size": 1338
+    },
+    {
+      "name": "mico_cortex_v2.py",
+      "path": "CORTEX/mico_cortex_v2.py",
+      "size": 2477
+    },
+    {
+      "name": "workflow_engine.py",
+      "path": "CORTEX/workflow_engine.py",
+      "size": 1050
+    },
+    {
+      "name": "policy_engine_v2.py",
+      "path": "CORTEX/policy_engine_v2.py",
+      "size": 1439
+    },
+    {
+      "name": "device_lock.py",
+      "path": "CORTEX/device_lock.py",
+      "size": 935
+    },
+    {
+      "name": "symlink_think.py",
+      "path": "CORTEX/symlink_think.py",
+      "size": 783
+    },
+    {
+      "name": "boot_start.sh",
+      "path": "CORTEX/boot_start.sh",
+      "size": 586
+    },
+    {
+      "name": "global_listener.sh",
+      "path": "CORTEX/global_listener.sh",
+      "size": 588
+    },
+    {
+      "name": "mico_cortex_v3.py",
+      "path": "CORTEX/mico_cortex_v3.py",
+      "size": 3429
+    },
+    {
+      "name": "detector_daemon.sh",
+      "path": "CORTEX/detector/detector_daemon.sh",
+      "size": 1549
+    },
+    {
+      "name": "event_bridge.py",
+      "path": "CORTEX/detector/event_bridge.py",
+      "size": 1194
+    },
+    {
+      "name": "workflow_engine.cpython-313.pyc",
+      "path": "CORTEX/__pycache__/workflow_engine.cpython-313.pyc",
+      "size": 1834
+    },
+    {
+      "name": "policy_engine_v2.cpython-313.pyc",
+      "path": "CORTEX/__pycache__/policy_engine_v2.cpython-313.pyc",
+      "size": 1985
+    },
+    {
+      "name": "device_lock.cpython-313.pyc",
+      "path": "CORTEX/__pycache__/device_lock.cpython-313.pyc",
+      "size": 1966
+    },
+    {
+      "name": "ai_router.py",
+      "path": "CORTEX/router/ai_router.py",
+      "size": 4821
+    },
+    {
+      "name": "ai_router.cpython-313.pyc",
+      "path": "CORTEX/router/__pycache__/ai_router.cpython-313.pyc",
+      "size": 5411
+    }
+  ],
+  "KERNEL": [
+    {
+      "name": "constitution.md",
+      "path": "KERNEL/constitution.md",
+      "size": 743
+    },
+    {
+      "name": "decision_kernel.py",
+      "path": "KERNEL/decision_kernel.py",
+      "size": 4967
+    },
+    {
+      "name": "lock_final.md",
+      "path": "KERNEL/lock_final.md",
+      "size": 3714
+    },
+    {
+      "name": "kernel.log",
+      "path": "KERNEL/logs/kernel.log",
+      "size": 2663
+    },
+    {
+      "name": "kernel_daemon.log",
+      "path": "KERNEL/logs/kernel_daemon.log",
+      "size": 271
+    },
+    {
+      "name": "watchdog.log",
+      "path": "KERNEL/logs/watchdog.log",
+      "size": 5449
+    },
+    {
+      "name": "agents.json",
+      "path": "KERNEL/registry/agents.json",
+      "size": 917
+    },
+    {
+      "name": "quota_policy.json",
+      "path": "KERNEL/policy/quota_policy.json",
+      "size": 283
+    },
+    {
+      "name": "mico_memory.db",
+      "path": "KERNEL/memory/mico_memory.db",
+      "size": 16384
+    },
+    {
+      "name": "edge_orchestrator.py",
+      "path": "KERNEL/workflow/edge_orchestrator.py",
+      "size": 1240
+    },
+    {
+      "name": "index_daemon.py",
+      "path": "KERNEL/daemon/index_daemon.py",
+      "size": 1054
+    },
+    {
+      "name": "kernel_daemon.py",
+      "path": "KERNEL/daemon/kernel_daemon.py",
+      "size": 1496
+    },
+    {
+      "name": "watchdog.sh",
+      "path": "KERNEL/daemon/watchdog.sh",
+      "size": 897
+    },
+    {
+      "name": "master_index.json",
+      "path": "KERNEL/index/master_index.json",
+      "size": 10511
+    }
+  ],
+  "ASSEMBLY": [
+    {
+      "name": "decisions.jsonl",
+      "path": "ASSEMBLY/decisions.jsonl",
+      "size": 1919
+    },
+    {
+      "name": "final_summary.md",
+      "path": "ASSEMBLY/final_summary.md",
+      "size": 1294
+    }
+  ],
+  "queue": [
+    {
+      "name": "tasks.json",
+      "path": "queue/tasks.json",
+      "size": 2
+    },
+    {
+      "name": "notif.db",
+      "path": "queue/notif.db",
+      "size": 16384
+    },
+    {
+      "name": "queue.lock",
+      "path": "queue/queue.lock",
+      "size": 0
+    },
+    {
+      "name": "tts.queue",
+      "path": "queue/tts.queue",
+      "size": 74679
+    },
+    {
+      "name": "results.json",
+      "path": "queue/results.json",
+      "size": 190
+    }
+  ],
+  "scripts": [
+    {
+      "name": "JDEQ-PHASE1-EXECUTE.sh",
+      "path": "scripts/JDEQ-PHASE1-EXECUTE.sh",
+      "size": 5553
+    }
+  ],
+  "ANANDA_MADINA": [
+    {
+      "name": "kunci_pusat.txt",
+      "path": "ANANDA_MADINA/kunci_pusat.txt",
+      "size": 37
+    }
+  ]
+}

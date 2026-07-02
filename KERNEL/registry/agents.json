@@ -1,0 +1,17 @@
+{
+  "agents": {
+    "mico": {"role": "kernel", "location": "local", "status": "active"},
+    "deepseek": {"role": "executor", "location": "cloud", "status": "active"},
+    "chatgpt": {"role": "auditor", "location": "cloud", "status": "active"},
+    "claude": {"role": "architect", "location": "cloud", "status": "active"},
+    "gemini": {"role": "router", "location": "cloud", "status": "active"},
+    "copilot_ms": {"role": "governance", "location": "cloud", "status": "active"},
+    "dola": {"role": "ssot_guardian", "location": "local", "status": "active"},
+    "perplexity": {"role": "research", "location": "cloud", "status": "active"},
+    "copilot_gh": {"role": "code_intel", "location": "cloud", "status": "active"},
+    "emergent": {"role": "evolution", "location": "local", "status": "active"}
+  },
+  "kernel": "mico",
+  "decision_authority": "decision_kernel.py",
+  "last_updated": "2026-06-28T14:30:00"
+}

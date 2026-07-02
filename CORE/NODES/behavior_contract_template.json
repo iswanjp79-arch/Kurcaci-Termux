@@ -1,0 +1,12 @@
+{
+  "node_id": "NODE001",
+  "identity": "Sensor Node",
+  "capability": ["sensor_read"],
+  "state": "sleep",
+  "memory_pointer": "/JDEQ/memory/node001.json",
+  "policy": {"max_retries": 3, "timeout_ms": 5000},
+  "risk": "LOW",
+  "recovery": "restart_node001.sh",
+  "audit": "/JDEQ/logs/node001_audit.log",
+  "learning": "/JDEQ/logs/node001_learn.jsonl"
+}

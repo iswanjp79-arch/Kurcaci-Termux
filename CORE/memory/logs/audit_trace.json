@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2026-06-21 03:37:15",
+    "input_summary": "RENCANA ANGGARAN BIAYA (RAB)\nProyek: Pembangunan Gedung Kantor\nLokasi: Area 1\n\nITEM PEKERJAAN:\n1. Galian Tanah: 120 m3 x Rp85.000 = Rp10.200.000\n2. Ti",
+    "reasoning_classification": "CIVIL - RAB Analysis (Earthwork) (Concrete)",
+    "reasoning_decision": "CIVIL - RAB Analysis (Earthwork) (Concrete)",
+    "validation_status": "PASS",
+    "validation_issues": [],
+    "final_status": "PASS",
+    "reason": "Validasi lulus"
+  }
+]

@@ -1,0 +1,51 @@
+#!/data/data/com.termux/files/usr/bin/sh
+# SISTEM UPLOAD JARVIS • ISWANJP79
+# Menggunakan koneksi G04 (Otak Pusat) yang sudah terhubung
+
+# 📌 CARA PAKAI:
+# jarvisupload <namafile>  -> Upload satu file
+# jarvisupload --all       -> Upload SEMUA isi folder brankas
+# jarvisupload --sync      -> Sinkronkan (Hapus di server jika hilang di HP)
+
+# LOKASI TUJUAN DI GOOGLE DRIVE:
+REMOTE_PATH="G04:EKOSISTEM_DIGITAL/VAULT_AMAN/"
+LOCAL_PATH="/data/data/com.termux/files/home/JDEQ/vault/"
+
+# CEK KONEKSI DRIVE
+cek_drive() {
+    if ! rclone lsd $REMOTE_PATH >/dev/null 2>&1; then
+        echo "🔴 KONEKSI G04 PUTUS! Menyambungkan ulang..."
+        # Perintah hubungkan ulang (sistem tadi)
+        bash /data/data/com.termux/files/home/JALANKAN_SEMUA_CLOUD.sh > /dev/null 2>&1 &
+        sleep 5
+    fi
+}
+
+# --- PERINTAH UTAMA ---
+case "$1" in
+    "--all")
+        cek_drive
+        echo "📤 MENGUPLOAD SEMUA DATA BRANKAS KE GDRIVE..."
+        rclone copy $LOCAL_PATH $REMOTE_PATH --progress --update
+        echo "✅ SELESAI! Semua data aman di Google Drive."
+        ;;
+    
+    "--sync")
+        cek_drive
+        echo "🔄 SINKRONISASI LOKAL ↔ GOOGLE DRIVE..."
+        rclone sync $LOCAL_PATH $REMOTE_PATH --progress
+        echo "✅ Data sama persis di kedua tempat."
+        ;;
+
+    *)
+        if [ -f "$1" ]; then
+            cek_drive
+                       echo "📤 UPLOAD FILE: $1 ..."
+            rclone copy "$1" $REMOTE_PATH --progress
+            echo "✅ BERHASIL TERKIRIM!"
+        else
+            echo "❌ File tidak ditemukan!"
+            echo "Pakai: jarvisupload <nama_file>  --atau--  jarvisupload --all"
+        fi
+        ;;
+esac

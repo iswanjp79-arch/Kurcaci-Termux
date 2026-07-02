@@ -1,0 +1,9 @@
+{"timestamp": 1782134700.0519397, "event": "TEST", "details": {"message": "Test log"}}
+{"timestamp": 1782134774.2512212, "event": "TEST", "details": {"message": "Test log"}}
+{"timestamp": 1782134828.3900888, "event": "TEST", "details": {"message": "Test log"}}
+{"timestamp": 1782135733.4605215, "event": "MICO_AUDIT", "details": {"findings": 0}}
+{"timestamp": 1782135733.4664946, "event": "MICO_AUDIT", "details": {"findings": 0}}
+{"timestamp": 1782135733.4701886, "event": "MICO_AUDIT", "details": {"findings": 0}}
+{"timestamp": 1782135853.556282, "event": "MICO_AUDIT", "details": {"findings": 0}}
+{"timestamp": 1782135853.5614672, "event": "MICO_AUDIT", "details": {"findings": 0}}
+{"timestamp": 1782135853.565124, "event": "MICO_AUDIT", "details": {"findings": 0}}

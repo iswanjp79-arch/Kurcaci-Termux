@@ -1,0 +1,22 @@
+# SURAT PERINTAH EKSEKUSI (SPE)
+
+**Nomor:** SPE-MICO-{MODULE_ID}-{DATE}
+**Modul:** {MODULE_NAME}
+**Status:** IMPLEMENTATION ORDER
+
+## TUJUAN
+Menyelesaikan implementasi modul {MODULE_NAME} sesuai DS-EXEC-V7-001.
+
+## KONTRAK YANG HARUS DIBUKTIKAN
+{TARGET_TESTS}
+
+## LARANGAN
+- Tidak mengubah SSOT
+- Tidak mengubah Blueprint
+- Tidak membuat modul baru
+
+## FORMAT LAPORAN
+Gunakan format standar DS-EXEC-V7-001 (STATUS, TUJUAN, RUANG LINGKUP, IMPLEMENTASI, PENGUJIAN, BUKTI, RISIKO, KEPUTUSAN).
+
+## STATUS AKHIR
+Hanya ✅ TERBUKTI, 🟡 SEBAGIAN TERBUKTI, atau ⚪ BELUM TERBUKTI.

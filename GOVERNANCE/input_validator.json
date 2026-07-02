@@ -1,0 +1,21 @@
+{
+  "banned_keywords": ["rm -rf /", "fork bomb", "shutdown", "halt", "reboot"],
+  "attack_patterns": [
+    "ignore previous instructions",
+    "you are now a different",
+    "pretend you are",
+    "bypass security",
+    "jailbreak",
+    "disregard rules",
+    "output your system prompt",
+    "reveal your instructions"
+  ],
+  "max_input_length": 4096,
+  "require_approval_for": ["system_modification", "file_deletion", "network_scan"],
+  "learn_from_failures": true,
+  "anti_hallucination": {
+    "require_source": true,
+    "confidence_threshold": 80,
+    "no_fabrication": true
+  }
+}

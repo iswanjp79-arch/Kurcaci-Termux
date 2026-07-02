@@ -1,0 +1,13 @@
+{
+  "decision_id": "WIS-001",
+  "project_id": "WISDOM-01",
+  "decision": "Gunakan supplier A",
+  "rationale": "",
+  "timestamp": 1782135853.4971929,
+  "outcome": "failure",
+  "source": "qwen",
+  "_audit": {
+    "status": "valid",
+    "audited_at": 1782135853.56197
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "sovereign_kernel": "TERBUKTI",
+  "reference_router": "TERBUKTI",
+  "event_bus": "TERBUKTI",
+  "virtual_daemon": "TERBUKTI",
+  "version_validator": "TERBUKTI",
+  "integration_test": "TERBUKTI",
+  "audit_logger": "TERBUKTI",
+  "command_center": "TERBUKTI"
+}

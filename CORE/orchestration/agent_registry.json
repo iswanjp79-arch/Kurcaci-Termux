@@ -1,0 +1,39 @@
+{
+  "agents": {
+    "jarvis": {"fungsi":["orchestrator","conductor","master"],"executor":"executors/jarvis_executor.sh","endpoint":"internal","priority":1},
+    "emergent": {"fungsi":["planner","strategi","brain"],"executor":"executors/emergent_executor.sh","endpoint":"internal","priority":2},
+    "agent_zero": {"fungsi":["motor","autonomous","framework"],"executor":"executors/agent_zero_executor.sh","endpoint":"internal","priority":3},
+    "claude": {"fungsi":["protokol","iso","ohsas","architect"],"executor":"executors/claude_executor.sh","endpoint":"internal","priority":4},
+    "chatgpt": {"fungsi":["analisa","strategi","RAB","WBS","auditor"],"executor":"executors/chatgpt_executor.sh","endpoint":"internal","priority":5},
+    "deepseek": {"fungsi":["coding","debugging","optimasi"],"executor":"executors/deepseek_executor.sh","endpoint":"internal","priority":6},
+    "blackbox": {"fungsi":["riset","research","trend"],"executor":"executors/blackbox_executor.sh","endpoint":"internal","priority":7},
+    "copilot": {"fungsi":["detail","refactor","factory"],"executor":"executors/copilot_executor.sh","endpoint":"internal","priority":8},
+    "qwen": {"fungsi":["local","offline","inference"],"executor":"local_qwen.sh","endpoint":"http://127.0.0.1:8082/completion","priority":9},
+    "dola": {"fungsi":["executioner","mandhor","operator"],"executor":"executors/dola_executor.sh","endpoint":"internal","priority":10},
+    "ms_copilot": {"fungsi":["chronicler","dokumentasi","logger"],"executor":"executors/ms_copilot_executor.sh","endpoint":"internal","priority":11},
+    "xau_trader": {"fungsi":["infra","quantum","simulation"],"executor":"executors/xau_trader_executor.sh","endpoint":"internal","priority":12},
+    "nix": {"fungsi":["eksekusi","build","compile","nix"],"executor":"executors/nix_executor.sh","endpoint":"bridge","priority":13},
+    "perplexity": {"fungsi":["riset","amoeba","splitting","failover","thermal","ram"],"executor":"executors/perplexity_executor.sh","endpoint":"external","priority":14},
+    "gemini": {"fungsi":["gambar","visual","desain"],"executor":"executors/gemini_executor.sh","endpoint":"internal","priority":15}
+  },
+  "routing_rules": {
+    "default": "qwen",
+    "contains": {
+      "orchestrator|conductor|master": "jarvis",
+      "planner|strategi|brain": "emergent",
+      "motor|autonomous|framework": "agent_zero",
+      "protokol|iso|ohsas|architect": "claude",
+      "analisa|strategi|RAB|WBS|auditor": "chatgpt",
+      "kode|code|coding|debug": "deepseek",
+      "riset|research|trend": "blackbox",
+      "detail|refactor|factory": "copilot",
+      "local|offline": "qwen",
+      "executioner|mandhor|operator": "dola",
+      "chronicler|dokumentasi|logger": "ms_copilot",
+      "infra|quantum|simulation": "xau_trader",
+      "eksekusi|build|compile|nix": "nix",
+      "amoeba|splitting|failover|thermal|ram": "perplexity",
+      "gambar|visual|desain": "gemini"
+    }
+  }
+}

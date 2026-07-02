@@ -1,0 +1,9 @@
+PASS : bash
+PASS : python
+PASS : curl
+PASS : jq
+PASS : git
+PASS : ping
+PASS : sed
+PASS : awk
+PASS : sha256sum

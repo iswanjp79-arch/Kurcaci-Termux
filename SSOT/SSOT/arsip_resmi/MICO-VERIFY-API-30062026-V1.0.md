@@ -1,0 +1,4 @@
+# LAPORAN PENGAWASAN RESMI — DOLA
+Kode: MICO-VERIFY-API-30062026-V1.0
+Status: SAH | Port 9001 = API UTAMA | Port 9000 = KHUSUS NGROK
+Syarat Minimum Koneksi: RAM≥2000MB | LLM=ON | Bridge=ON | Infinix=ON

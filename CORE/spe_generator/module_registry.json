@@ -1,0 +1,10 @@
+[
+  "sovereign_kernel",
+  "reference_router",
+  "event_bus",
+  "virtual_daemon",
+  "version_validator",
+  "integration_test",
+  "audit_logger",
+  "command_center"
+]

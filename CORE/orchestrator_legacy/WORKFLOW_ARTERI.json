@@ -1,0 +1,10 @@
+{
+  "workflow": {
+    "arteri": ["Input", "Proses", "Output", "Evaluasi"],
+    "vena": ["Hasil", "Audit", "Memory", "Feedback"],
+    "aturan": [
+      "Workflow tidak mengambil keputusan",
+      "Workflow hanya memastikan data dan pekerjaan melewati jalur yang benar"
+    ]
+  }
+}

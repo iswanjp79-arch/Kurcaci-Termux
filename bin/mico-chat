@@ -1,0 +1,7 @@
+#!/bin/bash
+cd ~/JDEQ/sistem_otak/llama_stabil/build
+./bin/llama-cli \
+  -m /storage/emulated/0/AI_Models/core/Qwen2.5-3B-Instruct-Q4_K_M.gguf \
+  -c 2048 \
+  -n 128 \
+  "$@"

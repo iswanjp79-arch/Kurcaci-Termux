@@ -1,0 +1,12 @@
+[
+  {
+    "file_name": "contoh_rab.txt",
+    "file_path": "/data/data/com.termux/files/home/JDEQ/CORE_KNOWLEDGE/documents/civil/contoh_rab.txt",
+    "category": "civil",
+    "extension": ".txt",
+    "size_kb": 0.4,
+    "modified": "2026-06-21 03:28:08",
+    "loaded_at": "2026-06-21 03:28:09",
+    "preview": "RENCANA ANGGARAN BIAYA (RAB)\nProyek: Pembangunan Gedung Kantor\nLokasi: Area 1\n\nITEM PEKERJAAN:\n1. Galian Tanah: 120 m3 x Rp85.000 = Rp10.200.000\n2. Timbunan: 45 m3 x Rp65.000 = Rp2.925.000\n3. Beton K-225: 28.5 m3 x Rp1.200.000 = Rp34.200.000\n4. Pasangan Bata: 200 m2 x Rp95.000 = Rp19.000.000\n5. Cor Lantai: 12 m3 x Rp1.100.000 = Rp13.200.000\n\nTOTAL: Rp79.525.000\n\nKategori: CIVIL, RAB, BOQ\n"
+  }
+]

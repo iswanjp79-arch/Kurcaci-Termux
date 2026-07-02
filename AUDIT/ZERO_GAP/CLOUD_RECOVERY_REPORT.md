@@ -1,0 +1,1 @@
+CLOUD_RECOVERY: TERTUNDA (WiFi diperlukan)

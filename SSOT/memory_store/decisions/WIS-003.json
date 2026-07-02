@@ -1,0 +1,13 @@
+{
+  "decision_id": "WIS-003",
+  "project_id": "WISDOM-01",
+  "decision": "Gunakan supplier A dengan pengawasan",
+  "rationale": "Lebih aman",
+  "timestamp": 1782135853.530085,
+  "outcome": "success",
+  "source": "dola",
+  "_audit": {
+    "status": "valid",
+    "audited_at": 1782135853.56197
+  }
+}

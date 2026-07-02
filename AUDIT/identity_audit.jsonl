@@ -1,0 +1,2 @@
+{"timestamp": "2026-07-01T00:42:00.390565", "event": "IDENTITY_COMPROMISED", "detail": "Hash mismatch"}
+{"timestamp": "2026-07-01T00:42:37.547226", "event": "IDENTITY_MIGRATED", "detail": "UUID: da826830-2382-4271-8918-936e83b8d930"}

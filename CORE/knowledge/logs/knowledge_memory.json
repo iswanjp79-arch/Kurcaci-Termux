@@ -1,0 +1,16 @@
+[
+  {
+    "time": "2026-06-21 03:28:08",
+    "source": "RAB_Test",
+    "category": "civil/rab",
+    "knowledge": "Template RAB standar JDEQ",
+    "validation": "PASS"
+  },
+  {
+    "time": "2026-06-21 03:28:08",
+    "source": "knowledge_loader.py",
+    "category": "system",
+    "knowledge": "Knowledge Engine aktif",
+    "validation": "PASS"
+  }
+]

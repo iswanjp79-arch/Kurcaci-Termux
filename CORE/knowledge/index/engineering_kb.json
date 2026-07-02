@@ -1,0 +1,131 @@
+{
+  "civil": {
+    "rab": {
+      "template": "Rencana Anggaran Biaya",
+      "format": [
+        "boq",
+        "ahsp",
+        "volume",
+        "harga_satuan"
+      ]
+    },
+    "boq": {
+      "template": "Bill of Quantity",
+      "format": [
+        "item",
+        "volume",
+        "satuan"
+      ]
+    },
+    "ahsp": {
+      "template": "Analisa Harga Satuan Pekerjaan",
+      "format": [
+        "koefisien",
+        "bahan",
+        "upah"
+      ]
+    },
+    "drawing": {
+      "template": "Gambar Teknik",
+      "format": [
+        "denah",
+        "potongan",
+        "detail"
+      ]
+    },
+    "material": {
+      "template": "Spesifikasi Material",
+      "format": [
+        "mutu",
+        "dimensi",
+        "standar"
+      ]
+    }
+  },
+  "mep": {
+    "electrical": {
+      "template": "Instalasi Listrik",
+      "format": [
+        "daya",
+        "kabel",
+        "panel"
+      ]
+    },
+    "mechanical": {
+      "template": "Sistem Mekanikal",
+      "format": [
+        "ducting",
+        "fan",
+        "cooling"
+      ]
+    },
+    "plumbing": {
+      "template": "Plumbing",
+      "format": [
+        "pipa",
+        "pompa",
+        "sanitasi"
+      ]
+    },
+    "hvac": {
+      "template": "HVAC",
+      "format": [
+        "ac",
+        "ventilasi",
+        "refrigerant"
+      ]
+    }
+  },
+  "maintenance": {
+    "preventive": {
+      "template": "Preventive Maintenance",
+      "format": [
+        "jadwal",
+        "checklist",
+        "frekuensi"
+      ]
+    },
+    "corrective": {
+      "template": "Corrective Maintenance",
+      "format": [
+        "kerusakan",
+        "perbaikan",
+        "part"
+      ]
+    },
+    "failure_analysis": {
+      "template": "Failure Analysis",
+      "format": [
+        "root_cause",
+        "impact",
+        "solution"
+      ]
+    }
+  },
+  "quality": {
+    "iso": {
+      "template": "ISO Standards",
+      "format": [
+        "9001",
+        "31000",
+        "45001"
+      ]
+    },
+    "ohsas": {
+      "template": "OHSAS 18001",
+      "format": [
+        "hazard",
+        "risk",
+        "control"
+      ]
+    },
+    "audit": {
+      "template": "Audit Report",
+      "format": [
+        "temuan",
+        "koreksi",
+        "verifikasi"
+      ]
+    }
+  }
+}

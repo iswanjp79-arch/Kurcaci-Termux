@@ -1,0 +1,37 @@
+[
+  {
+    "time": "2026-06-21 03:23:54",
+    "event": "PHASE14_TEST",
+    "decision": "UPGRADE_DECISION_MEMORY",
+    "reason": "Format JSON untuk histori",
+    "result": "SUCCESS"
+  },
+  {
+    "time": "2026-06-21 03:23:54",
+    "event": "ENV_WARNING_DEBIAN_MISSING",
+    "decision": "NOTIFY",
+    "reason": "Auto-response from Event Bridge",
+    "result": "DEBIAN_NOT_INSTALLED"
+  },
+  {
+    "time": "2026-06-21 03:33:04",
+    "input": "RENCANA ANGGARAN BIAYA (RAB)\nProyek: Pembangunan Gedung Kantor\nLokasi: Area 1\n\nITEM PEKERJAAN:\n1. Galian Tanah: 120 m3 x Rp85.000 = Rp10.200.000\n2. Timbunan: 45 m3 x Rp65.000 = Rp2.925.000\n3. Beton K-",
+    "analysis": "{'classification': 'CIVIL - RAB Analysis (Earthwork) (Concrete)', 'extracted_data': {'volume_m3': ['120', '45', '28.5', '12'], 'luas_m2': ['200'], 'panjang_m': ['120', '45', '28.5', '200', '12'], 'biaya_rp': ['85.000', '10.200.000', '65.000', '2.925.000', '1.200.000', '34.200.000', '95.000', '19.000",
+    "decision": "CIVIL - RAB Analysis (Earthwork) (Concrete)",
+    "status": "PASS"
+  },
+  {
+    "time": "2026-06-21 03:37:15",
+    "input": "RENCANA ANGGARAN BIAYA (RAB)\nProyek: Pembangunan Gedung Kantor\nLokasi: Area 1\n\nITEM PEKERJAAN:\n1. Galian Tanah: 120 m3 x Rp85.000 = Rp10.200.000\n2. Timbunan: 45 m3 x Rp65.000 = Rp2.925.000\n3. Beton K-",
+    "analysis": "{'classification': 'CIVIL - RAB Analysis (Earthwork) (Concrete)', 'extracted_data': {'volume_m3': ['120', '45', '28.5', '12'], 'luas_m2': ['200'], 'panjang_m': ['120', '45', '28.5', '200', '12'], 'biaya_rp': ['85.000', '10.200.000', '65.000', '2.925.000', '1.200.000', '34.200.000', '95.000', '19.000",
+    "decision": "CIVIL - RAB Analysis (Earthwork) (Concrete)",
+    "status": "PASS"
+  },
+  {
+    "time": "2026-06-21 03:40:08",
+    "input": "Analisa RAB beton K-225",
+    "analysis": "{'classification': 'CIVIL - RAB Analysis (Concrete)', 'extracted_data': {'mutu_beton': ['225']}, 'summary': 'Mutu beton: K-225'}",
+    "decision": "CIVIL - RAB Analysis (Concrete)",
+    "status": "PASS"
+  }
+]

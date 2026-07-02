@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "✅ MEMULAI PEMASANGAN SISTEM MICO‑JDEQ — GRATIS & AMAN"
+mkdir -p ~/JDEQ/{SSOT,GOVERNANCE,MEMORY,KNOWLEDGE,WORKFLOW,AGENTS,AUDIT}
+cp -r ./{SSOT,GOVERNANCE,MEMORY,CORE_ORCHESTRATION,bin,AUDIT} ~/JDEQ/ 2>/dev/null
+chmod +x ~/JDEQ/bin/*.sh ~/JDEQ/CORE_ORCHESTRATION/*.py 2>/dev/null
+chmod 444 ~/JDEQ/SSOT/* 2>/dev/null
+echo "✅ SELESAI: Seluruh sistem terpasang lengkap — TANPA BIAYA, TANPA SEWA"

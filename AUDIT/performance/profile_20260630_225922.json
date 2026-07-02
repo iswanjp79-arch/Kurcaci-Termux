@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-06-30T22:59:22.839415",
+  "ram_total_mb": 7756.94,
+  "ram_available_mb": 3458.39,
+  "ram_used_mb": 4298.55,
+  "ram_percent": 55.4,
+  "cpu_load_1min": -1,
+  "cpu_load_5min": -1,
+  "cpu_load_15min": -1,
+  "cpu_temp_c": "N/A",
+  "battery": {
+    "present": true,
+    "technology": "Li-ion",
+    "health": "GOOD",
+    "plugged": "UNPLUGGED",
+    "status": "DISCHARGING",
+    "temperature": 35.2,
+    "voltage": 3844,
+    "current": -508800,
+    "current_average": -554600,
+    "percentage": 63,
+    "level": 63,
+    "scale": 100,
+    "charge_counter": 3233000,
+    "cycle": 774
+  },
+  "processes_since_boot": 20
+}

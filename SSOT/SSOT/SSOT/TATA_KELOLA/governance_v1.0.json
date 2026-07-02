@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "timestamp": "2026-06-25T00:00:00Z",
+  "name": "MICO Governance Framework",
+  "status": "ACTIVE",
+  "manajemen_risiko": {
+    "risiko_level_1_critical": {
+      "kategori": "Data & Keamanan",
+      "mitigasi": "Encrypt semua storage lokal, backup harian ke cloud terpisah",
+      "owner": "DOLA"
+    },
+    "risiko_level_2_high": {
+      "kategori": "Infrastruktur HP",
+      "mitigasi": "Emergency recovery & dual device ready",
+      "owner": "System Admin"
+    },
+    "risiko_level_3_medium": {
+      "kategori": "Agen AI",
+      "mitigasi": "Rotate agen, verifikasi output sebelum eksekusi",
+      "owner": "Divisi Teknik"
+    }
+  },
+  "kebijakan_data": {
+    "retention_policy": "Simpan selamanya, backup 3 lokasi minimum",
+    "access_policy": "Hanya Iswan & DOLA tanpa approval",
+    "encryption": "AES-256 untuk storage, HTTPS untuk transit"
+  },
+  "jejak_keputusan": {
+    "format": "JSONL per keputusan dengan timestamp & approver",
+    "lokasi": "~/JDEQ/audit/decisions.jsonl",
+    "immutable": true,
+    "hashing": "SHA-256 chain integrity check hourly"
+  }
+}
