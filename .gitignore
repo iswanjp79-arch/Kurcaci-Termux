@@ -1,8 +1,10 @@
-# === BERKAS RAHASIA — DILARANG MASUK KE GUDANG AWAN ===
+# === BERKAS RAHASIA — DILARANG MASUK SELAMANYA ===
 bin/*token*.sh
 bin/*grafana*.sh
 bin/*grafana*.py
+bin/*kirim_grafana*.sh
 bin/install_gemini*.sh
 *.env
 *.key
 *.secret
+*.cred
