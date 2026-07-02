@@ -15,3 +15,4 @@ bin/push_metrics_grafana.sh
 bin/push_metrics_grafana.sh.bak
 bin/install_gemini_copilot.sh
 bin/push_final.sh
+bin/push_final.sh
